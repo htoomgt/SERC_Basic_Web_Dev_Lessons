@@ -1,24 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XYZ Student Registration Form</title>
-    <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
-    <div class="main_container">
-        <div class="banner_header">
-            <h1> XYA College/School </h1>
-        </div>
-        <div class="page_title">
-            <h2>Student Registration Form</h2>
-        </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>XYZ Student Registration Form</title>
+        <link rel="stylesheet" href="./styles/style.css" />
+    </head>
+    <body>
+        <div class="main_container">
+            <div class="banner_header">
+                <h1>XYA College/School</h1>
+            </div>
+            <div class="page_title">
+                <h2>Student Registration Form</h2>
+            </div>
 
-        <div class="form_container">
-            
+            <div class="form_container">
+                <form action="" method="post" autocomplete="false">
+                    <table class="reg_form_table">
+                        <tr>
+                            <td>
+                                <label for="ipt_tudent_image"> Student Image : </label>
+                            </td>
+                            <td>
+                                <input
+                                    type="file"
+                                    name="student_image"
+                                    id="ipt_tudent_image"
+                                    placeholder="Upload Student Image"
+                                    required
+                                    class="file_input"
+                                />
+    
+                                <span class="file_input_text">
+                                    less than 5 Mb
+                                </span>
+                            </td>
+                        </tr>
+                        <!-- Student Name Row Start -->
+                        <tr>
+                            <td>
+                                <label for="ipt_student_name"> Student Name : </label>
+                            </td>
+                            <td>
+                                <input
+                                    type="text"
+                                    name="student_name"
+                                    id="ipt_student_name"
+                                    placeholder="Enter Student Name"
+                                    required
+                                />
+                            </td>
+                        </tr>
+                        <!-- Student Name Row End -->
+                        <!-- Father Name Row Start -->
+                        <tr>
+                            <td>
+                                <label for="ipt_father_name"> Father's Name : </label>
+                            </td>
+                            <td>
+                                <input
+                                    type="text"
+                                    name="father_name"
+                                    id="ipt_father_name"
+                                    placeholder="Enter Father Name"
+                                    required
+                                />
+                            </td>
+                        </tr>
+                        <!-- Father Name Row End -->
+                        <!-- Mother Name Row Start -->
+                        <tr>
+                            <td>
+                                <label for="ipt_mother_name"> Mother's Name : </label>
+                            </td>
+                            <td>
+                                <input
+                                    type="text"
+                                    name="mother_name"
+                                    id="ipt_mother_name"
+                                    placeholder="Enter Mother Name"
+                                    required
+                                />
+                            </td>
+                        </tr>
+                        <!-- Mother Name Row End -->
+                        <!-- Gender Row Start  -->
+                        <tr>
+                            <td>
+                                <label for="td_gender"> Gender : </label>
+                            </td>
+                            <td id="td_gender">
+                                <div>
+                                    <label for="ipt_gender_male"> Male : </label>
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    id="ipt_gender_male"
+                                    value="male"
+                                    required
+                                    checked
+                                />
+                                </div>
+                                
+                                <div>
+                                    <label for="ipt_gender_male"> Female : </label>
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    id="ipt_gender_female"
+                                    value="male"
+                                    required
+                                />
+                                </div>
+
+                                <div>
+                                    <label for="ipt_gender_male"> Other : </label>
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    id="ipt_gender_other"
+                                    value="other"
+                                    required
+                                />
+                                </div>
+                                
+                            </td>
+                        </tr>
+                        <!-- Gender Row End -->
+                        <!-- Date of birth Row Start -->
+                        <tr>
+                            <td>
+                                <label for="ipt_date_of_birth"> Date of Birth : </label>
+                            </td>
+                            <td>
+                                <input
+                                    type="date"
+                                    name="date_of_birth"
+                                    id="ipt_date_of_birth"
+                                    placeholder="Enter Date of Birth"
+                                    required
+                                />
+                            </td>
+                        </tr>
+                        <!-- Date of birth Row End -->
+                        <!-- Email Address Row Start -->
+                        <tr>
+                            <td>
+                                <label for="ipt_email_address"> Email Address : </label>
+                            </td>
+                            <td>
+                                <input
+                                    type="email"
+                                    name="email_address"
+                                    id="ipt_email_address"
+                                    placeholder="Enter Email Address"
+                                    required
+                                />
+                            </td>
+                        </tr>
+                        <!-- Email Address Row End -->
+                        <!-- Level Row Start -->
+                        <tr>
+                            <td>
+                                <label for="sel_level"> Level : </label>
+                            </td>
+                            <td>
+                                
+                                <select name="level" required id="sel_level">
+                                    <option>--Select a level--</option>
+                                    <option value="high school">High School</option>
+                                    <option value="middle school">Middle School</option>
+                                    <option value="primary school">Primary School</option>
+
+                                </select>
+                            </td>
+                        </tr>
+                        <!-- Level Row End -->
+                        <!-- Department Row Start -->
+                        <tr>
+                            <td>
+                                <label for="sel_department"> Department : </label>
+                            </td>
+                            <td>
+                                
+                                <select name="department" required id="sel_department">
+                                    <option>--Select a department--</option>
+                                    <option value="english">English</option>
+                                    <option value="math">Math</option>
+                                    <option value="physic">Physic</option>
+                                    <option value="chemistery">Chemistery</option>
+                                    <option value="civil engineering">Civil Engineering</option>
+                                    <option value="history">History</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <!-- Department Row End -->
+                        <!-- Tele Mobile Row Start -->
+                        <tr>
+                            <td>
+                                <label for="ipt_tele_mobile"> Tele Mobile Name : </label>
+                            </td>
+                            <td>
+                                <input
+                                    type="text"
+                                    name="tele_mobile"
+                                    id="ipt_tele_mobile"
+                                    placeholder="Enter Tele Mobile"
+                                    required
+                                />
+                            </td>
+                        </tr>
+                        <!-- Tele Mobile Row End -->
+                        <!-- Form Action Button Row Start -->
+                        <tr>
+                            <td>
+                                
+                            </td>
+                            <td>
+                                <input type="submit" value="Register" class="form_action_btn"/>
+                            </td>
+                        </tr>
+                        <!-- Form Action Button Row End -->
+                        <tr>
+                            <td></td>
+                            <td>
+                                <a href="./login-page.html">Go To Login Page</a>
+                            </td>
+                        </tr>
+
+                    </table>
+                </form>
+            </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>
