@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second HTML Form</title>
+
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1>Second HTML FORM</h1>
+        <hr/> 
+        <p>
+            <a href="./first_form.html"> Go to register page</a>
+        </p>
+
+        <div class="form-container">
+            <p> Please Login here. <span class="mandatorySign">*</span> Fields are mandatory.</p>
+
+            <form action="./first_form.html" method="GET">
+                <label 
+                    for="iptEmail"  
+                    class="inputLabel"
+                > 
+                    Email 
+                    <span class="mandatorySign">*</span> :  
+                </label><br/>
+
+                <input 
+                    id="iptEmail"
+                    type="email" 
+                    name="email" 
+                    placeholder="Enter your email" 
+                    required
+                    class="inputField"
+                    > <br/>   
+                    
+                    <label 
+                        for="iptPassword"
+                        class="inputLabel"
+                    > 
+                        Password:
+                        <span class="mandatorySign">*</span> : 
+                    </label> 
+                    <br/>
+                    <input 
+                    id="iptPassword"
+                    type="password" 
+                    name="password" 
+                    placeholder="Enter your password" 
+                    required
+                    class="inputField"
+                    > <br/>  <br/>
+
+                    <input type="submit" value="Login" class="iptSubmit" />
+            </form>
+
+        </div>
+
+
+    </div>
+</body>
+</html>

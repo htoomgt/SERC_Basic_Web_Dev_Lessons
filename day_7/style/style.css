@@ -1,0 +1,40 @@
+body{
+    background-color: #c5ccd6;  
+    color: #2a2a2e;  
+}
+
+.main-container{
+    width: 1000px;
+    min-height: 400px;
+    margin: 0 auto;
+    border: 1px solid #141414;
+    padding: 16px;
+}
+
+.mandatorySign{
+    color: red;
+}
+
+.inputLabel{
+    display:inline-block;
+    margin-top:16px;
+}
+
+.iptSubmit{
+    width: 128px;
+    height: 32px;
+    color: white;
+    background-color: #2E5E8D;
+    border-radius: 8px 0 8px 0;
+    font-size: 17px;
+    border:none;
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: #4884E7;
+}
+
+.inputField{
+    border: 2px solid #141414;
+}

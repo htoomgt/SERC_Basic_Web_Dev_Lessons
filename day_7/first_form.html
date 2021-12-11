@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>First Form</title>
+
+        <link rel="stylesheet" href="./style/style.css" />
+    </head>
+    <body>
+        <div class="main-container">
+            <h1>First HTML FORM</h1>
+            <hr />
+
+            <p>
+                <a href="./secnond_form.html"> Go to login page</a>
+            </p>
+
+            <div class="form-container">
+                <p>
+                    Please register here.
+                    <span class="mandatorySign">*</span> Fields are mandatory.
+                </p>
+                <form action="./secnond_form.html" method="GET">
+                    <label for="iptFullname" class="inputLabel">
+                        Fullname
+                        <span class="mandatorySign">*</span> :
+                    </label>
+                    <br />
+                    <input
+                        id="iptFullname"
+                        type="text"
+                        name="fullname"
+                        placeholder="Enter your fullname"
+                        required
+                        class="inputField"
+                    />
+                    <br />
+
+                    <label for="iptEmail" class="inputLabel">
+                        Email
+                        <span class="mandatorySign">*</span> :
+                    </label>
+                    <br />
+                    <input
+                        id="iptEmail"
+                        type="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                        class="inputField"
+                    />
+                    <br />
+
+                    <label for="iptPhoneNumber" class="inputLabel">
+                        Phone Number
+                        <span class="mandatorySign">*</span> :
+                    </label>
+                    <br />
+                    <input
+                        id="iptPhoneNumber"
+                        type="text"
+                        name="phoneNumber"
+                        placeholder="Enter your phone number"
+                        required
+                        class="inputField"
+                    />
+                    <br />
+
+                    <label for="txaAddress" class="inputLabel">
+                        Address
+                        <span class="mandatorySign">*</span> :
+                    </label>
+                    <br />
+                    <textarea
+                        id="txaAddress"
+                        name="address"
+                        cols="30"
+                        rows="5"
+                        required
+                        class="inputField"
+                    ></textarea>
+                    <br />
+
+                    <label for="selGender" class="inputLabel">
+                        Gender
+                        <span class="mandatorySign">*</span> :
+                    </label>
+                    <br />
+                    <select id="selGender" name="gender" requied class="inputField">
+                        <option value="">--choose a gender--</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    <br />
+
+                    <label for="chkSubNewsletter" class="inputLabel">
+                        New registrant or not
+                        <span class="mandatorySign">*</span>:
+                    </label>
+                    <br />
+                    <label> New : </label>
+                    <input
+                        id="rdNewRegistrant"
+                        type="radio"
+                        name="newRegistrantOrNot"
+                        value="yes"
+                        checked
+                        class="inputField"
+                    />
+                    <label> Old : </label>
+                    <input
+                        id="rdNewRegistrant"
+                        type="radio"
+                        name="newRegistrantOrNot"
+                        value="no"
+                    />
+                    <br />
+
+                    <label for="chkSubNewsletter" class="inputLabel">
+                        Subscribe Newsletter :
+                    </label>
+                    <input
+                        id="chkSubNewsletter"
+                        type="checkbox"
+                        name="newsletter"
+                        value="yes"
+                    />
+                    <br /><br />
+
+                    <input type="submit" value="Register" class="iptSubmit" />
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
