@@ -12,7 +12,38 @@ body{
 hr{
     border-color: #000;
 }
+table.basic_table{
+    width: 100%;
+    border-collapse: collapse;
+}
 
-table, th, td {
+table.basic_table, 
+table.basic_table th, 
+table.basic_table td {
     border: 1px solid black;    
+}
+
+
+table.strip_table{
+    font-family:Arial, Helvetica, sans-serif;
+    border-collapse:collapse;
+    width:100%;    
+}
+
+table.strip_table th,
+table.strip_table td{
+    border: 1px solid #000;
+    text-align: left;
+    padding: 8px;
+}
+table.strip_table thead tr{
+    background-color: #484848;
+    color: #fff;    
+}
+table.strip_table thead tr th{
+    text-align: center;
+}
+
+table.strip_table tbody tr:nth-child(even){
+    background-color: #ddd;
 }
