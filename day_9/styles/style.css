@@ -1,0 +1,18 @@
+body{
+    background-color: #a2a2a2;
+}
+
+.main_container{
+    width: 1000px;
+    min-height: 300px;    
+    padding: 20px;
+    border: 1px solid #000;
+    margin: 0 auto 0 auto;
+}
+hr{
+    border-color: #000;
+}
+
+table, th, td {
+    border: 1px solid black;    
+}
