@@ -36,6 +36,10 @@
             height: 30px;
             border: none;
         }
+
+        #showingDateTime{
+            margin-bottom: 64px;
+        }
     </style>
 
 </head>
@@ -56,6 +60,16 @@
     <button id="testAlert">
         Test Alert
     </button>
+
+    <button 
+        onClick="showDateTime()" 
+        type="button" 
+        class="btnCommon"
+    >
+        Show Date Time
+    </button>
+
+    <p id="showingDateTime"></p>
 
 
     
@@ -79,4 +93,11 @@
         .addEventListener("click", function(){
             alert("Hello you clicked the blue button!");
         });
+
+    function showDateTime(){
+        let showingDateTimeParagraph = 
+        document.getElementById("showingDateTime");
+
+        showingDateTimeParagraph.innerHTML = Date();
+    }    
 </script>
