@@ -20,6 +20,14 @@
             padding: 16px;
             text-align: left;
         }
+        .btnCommon{
+            background-color: cornflowerblue;
+            color: white;
+            width: 200px;
+            height: 30px;
+            border-radius: 5px;
+            border: none;
+        }
     </style>
 
 </head>
@@ -32,6 +40,25 @@
     <h1 class="commonHeader">My Header 3</h1>
     <h1 class="commonHeader">My Header 4</h1>
     <h1 class="commonHeader">My Header 5</h1>
+
+    <button onClick="onClickHandler()" class="btnCommon"> 
+        Change Header Content
+    </button>
+
+
     
 </body>
 </html>
+<script > 
+    function onClickHandler(){
+        alert("Hello you clicked the button!");
+        
+        let header = document.getElementById("myHeader");
+        console.log(header.innerHTML);
+        alert(" My header content is :" + header.innerHTML)
+
+        header.innerHTML = "Updated Header Content";
+        console.log(header.innerHTML);
+        alert(" My header content is :" + header.innerHTML)
+    }
+</script>
