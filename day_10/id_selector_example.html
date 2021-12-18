@@ -28,6 +28,14 @@
             border-radius: 5px;
             border: none;
         }
+
+        #testAlert{
+            background-color:blue;
+            color: white;
+            width: 144px;
+            height: 30px;
+            border: none;
+        }
     </style>
 
 </head>
@@ -45,6 +53,10 @@
         Change Header Content
     </button>
 
+    <button id="testAlert">
+        Test Alert
+    </button>
+
 
     
 </body>
@@ -55,10 +67,16 @@
         
         let header = document.getElementById("myHeader");
         console.log(header.innerHTML);
-        alert(" My header content is :" + header.innerHTML)
+        alert(" My header content is :" + header.innerHTML);
 
         header.innerHTML = "Updated Header Content";
         console.log(header.innerHTML);
-        alert(" My header content is :" + header.innerHTML)
+        alert(" My header content is :" + header.innerHTML);
     }
+
+
+    document.getElementById("testAlert")
+        .addEventListener("click", function(){
+            alert("Hello you clicked the blue button!");
+        });
 </script>
