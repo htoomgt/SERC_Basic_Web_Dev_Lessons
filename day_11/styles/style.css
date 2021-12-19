@@ -39,11 +39,23 @@ h1.banner_text{
     display:flex;
     flex-direction: column;
     justify-content: left;
+    border:none;
 }
 
 .body_content .iframe_1{
     width:auto;
     height: 320px;
+}
+.content_list{
+    margin-bottom: 16px;
+}
+.content_list li{
+    margin-left: 32px;
+}
+.content_list li a{
+    text-decoration: none;
+    color: #0a0a0a;
+    font-size: 1.6vw;
 }
 
 
