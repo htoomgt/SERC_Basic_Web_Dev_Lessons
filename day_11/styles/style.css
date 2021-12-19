@@ -58,6 +58,15 @@ h1.banner_text{
     font-size: 1.6vw;
 }
 
+p{
+    font-size: 1.6vw;
+    margin:16px;
+}
+
+.mt-16{
+    margin-top: 16px;
+}
+
 
 @media screen and (max-width: 800px) {
     .main_container{
