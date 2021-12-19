@@ -30,6 +30,22 @@ h1.banner_text{
     justify-content: left;
 }
 
+.body_content{
+    width:auto;
+    min-height: 350px;
+    border: 1px solid #0a0a0a;    
+    margin:16px;
+    padding:8px;
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.body_content .iframe_1{
+    width:auto;
+    height: 320px;
+}
+
 
 @media screen and (max-width: 800px) {
     .main_container{
