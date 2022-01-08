@@ -108,15 +108,15 @@ main{
     min-height: 500px;
     width: 76%;
     margin: 0px auto 0 auto;
-    border-left: 1px solid #a2a2a2;
-    border-right: 2px solid #a2a2a2;
+    /* border-left: 1px solid #a2a2a2;
+    border-right: 2px solid #a2a2a2; */
 
 }
 
 main aside{
     width: 25%;
     padding: 4px;
-    border-right: 1px solid #a2a2a2;
+    /* border-right: 1px solid #a2a2a2; */
 }
 
 main aside h3{
@@ -153,8 +153,7 @@ main section#display_content{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
-    padding-top: 16px;
-    padding-left: 16px;
+    padding: 16px;
     
 }
 
@@ -172,6 +171,8 @@ main section#display_content article.city_card:hover{
 
 main section#display_content article.city_card img{
     width: 100%;
+    height: 50%;
+    object-fit: cover;
 }
 
 main section#display_content article.city_card div{
