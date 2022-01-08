@@ -11,13 +11,24 @@ body{
 }
 
 header{    
+    display: flex;
+    flex-direction: column;
     min-height: 350px;   
+    background-color: #282A35;
 }
-
+#nav_section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #282A35;
+    /* padding: 10px;
+    margin-bottom: 10px; */
+}
 nav{
     display:flex;
     width: 100%;
-    background-color: #282A35;
+    
     min-height: 36px;
     padding: 0px 0 0 24px;
     overflow: hidden;
@@ -25,8 +36,12 @@ nav{
     
 }
 
-nav img{
-    width: 30%;
+#nav_logo{
+    padding-left: 32px;
+}
+
+#nav_section img{
+    width: 40%;
 }
 
 nav a{
