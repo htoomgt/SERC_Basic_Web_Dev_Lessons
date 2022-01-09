@@ -282,6 +282,11 @@ footer ul li a{
         flex-direction: column;
         margin:0;
         padding:0;
+      
+        
+    }
+    nav a{
+        font-size: 1.8vw;        
     }
 
     section#section_jumbotron{
@@ -304,6 +309,10 @@ footer ul li a{
         grid-template-columns: 1fr 1fr;
     }
 
+    main section#display_content article.city_card div p{
+        font-size: 1.8vw;
+    }
+
     #footer_container{
         flex-direction: column;
         align-items: center;
@@ -322,11 +331,21 @@ footer ul li a{
     footer ul li{ 
         margin-top: 8px;
     }
+
+    footer{
+        font-size: 1.8vw;
+    }
 }
 
 @media screen and (max-width: 480px) {
     main section#display_content{
         grid-template-columns: 1fr;
+    }
+    main section#display_content article.city_card div p{
+        font-size: 2.4vw;
+    }
+    nav a{
+        font-size: 2.4vw;        
     }
 }
 
