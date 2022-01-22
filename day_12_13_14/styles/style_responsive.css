@@ -206,6 +206,17 @@ main section#display_content article.city_card div p{
     margin-bottom: 4px; */
 }
 
+main section#display_content a{
+    text-decoration: none;
+    color: #282A35;
+    font-size: 1.3vw;
+    display: block;
+    width: 100%;
+    line-height: 20px;
+    border:1px solid #282A35;
+    border-radius: 5px;
+}
+
 
 
 footer{
@@ -294,7 +305,7 @@ footer ul li a{
 }
 
 .single_main_column .about_us_paragraph_image{
-    margin:4px;
+    margin:8px;
 }
 
 @media screen and (max-width: 780px) {  
