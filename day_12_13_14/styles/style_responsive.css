@@ -270,13 +270,13 @@ footer ul li a{
     margin-top : 8px;
 }
 
-.single_main_column{
-    margin: 16px;
-    
+.single_main_column{    
+    width: 100%;
+    padding: 16px;
 }
 
 .single_main_column h1.page_header_title{
-    font-size: 2.5vw;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 8px;
     display: flex;
@@ -285,7 +285,7 @@ footer ul li a{
 
 .single_main_column p{
     width: 100%;
-    font-size: 1.5vw;
+    font-size: 12px;
     margin-bottom: 8px;
     line-height: 20px;
     margin-bottom: 8px;
