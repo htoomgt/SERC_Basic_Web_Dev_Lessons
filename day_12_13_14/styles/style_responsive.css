@@ -173,6 +173,15 @@ main section#display_content{
     
 }
 
+main section#gallery_images{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 16px;
+    margin:16px auto;
+}
+
 main section#display_content article.city_card{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -181,13 +190,32 @@ main section#display_content article.city_card{
     background-color: #f1f1f1;
 }
 
+main section#gallery_images article.city_card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    height: 130px;
+    background-color: #f1f1f1;
+}
+
 main section#display_content article.city_card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+main section#gallery_images  article.city_card:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 main section#display_content article.city_card img{
     width: 100%;
     height: 50%;
+    object-fit: cover;
+}
+
+
+main section#gallery_images article.city_card img{
+    width: 100%;
+    height: 80%;
     object-fit: cover;
 }
 
@@ -200,11 +228,27 @@ main section#display_content article.city_card div{
     justify-content: space-evenly;
 }
 
+main section#gallery_images  article.city_card div{
+    text-align: center;
+    padding: 4px 8px;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 main section#display_content article.city_card div p{
     font-size: 1.3vw;
     /* margin-top: 4px;
     margin-bottom: 4px; */
 }
+
+main section#gallery_images article.city_card div p{
+    font-size: 1.3vw;
+    /* margin-top: 4px;
+    margin-bottom: 4px; */
+}
+
 
 main section#display_content a{
     text-decoration: none;
@@ -216,6 +260,19 @@ main section#display_content a{
     border:1px solid #282A35;
     border-radius: 5px;
 }
+
+main section#gallery_images a{
+    text-decoration: none;
+    color: #282A35;
+    font-size: 1.3vw;
+    display: block;
+    width: 100%;
+    line-height: 20px;
+    border:1px solid #282A35;
+    border-radius: 5px;
+}
+
+
 
 
 
@@ -347,6 +404,10 @@ footer ul li a{
         grid-template-columns: 1fr 1fr;
     }
 
+    main section#gallery_images{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
     main section#display_content article.city_card div p{
         font-size: 1.8vw;
     }
@@ -377,6 +438,9 @@ footer ul li a{
 
 @media screen and (max-width: 480px) {
     main section#display_content{
+        grid-template-columns: 1fr;
+    }
+    main section#gallery_images{
         grid-template-columns: 1fr;
     }
     main section#display_content article.city_card div p{
